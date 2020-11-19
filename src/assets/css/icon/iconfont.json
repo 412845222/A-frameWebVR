@@ -1,0 +1,72 @@
+{
+  "id": "2125905",
+  "name": "dwebclub",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "554475",
+      "name": "展开",
+      "font_class": "iconset0441",
+      "unicode": "e740",
+      "unicode_decimal": 59200
+    },
+    {
+      "icon_id": "1788953",
+      "name": "收起",
+      "font_class": "shouqi",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "12310092",
+      "name": "logo_github",
+      "font_class": "logo_github",
+      "unicode": "e85a",
+      "unicode_decimal": 59482
+    },
+    {
+      "icon_id": "15188538",
+      "name": "reload",
+      "font_class": "reload",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
+      "icon_id": "1719301",
+      "name": "微信 (1)",
+      "font_class": "weixin1",
+      "unicode": "e7b4",
+      "unicode_decimal": 59316
+    },
+    {
+      "icon_id": "5271617",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e6ea",
+      "unicode_decimal": 59114
+    },
+    {
+      "icon_id": "6900161",
+      "name": "综合控制台",
+      "font_class": "zonghekongzhitai",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "7155227",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "10918077",
+      "name": "bilibili-fill",
+      "font_class": "bilibili-fill",
+      "unicode": "e75c",
+      "unicode_decimal": 59228
+    }
+  ]
+}

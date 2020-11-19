@@ -1,0 +1,385 @@
+body,html {
+  margin: 0;
+  color: #fff;
+}
+.dweb {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4), 0 0 6px rgba(0, 0, 0, .4);
+  background-color: rgb(40,44,52,0.4);
+  /* margin-top: 10px; */
+  /* padding: 5px 10px; */
+}
+.page-view .dweb {
+  background-color: #ffffff00!important;
+}
+
+#left-menu {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4), 0 0 6px rgba(0, 0, 0, .4);
+  background-color: rgb(40,44,52,0.4);
+  padding-top:20px;
+  transition: all 0.3s ease;
+}
+#left-menu.xs {
+  margin-left: -200px;
+  transition: all 0.3s ease;
+}
+.logo {
+  display: flex;
+  height: 80px;
+  padding: 0 20px;
+  border-bottom: 1px solid rgb(255,200,21,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+.logo span {
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#content {
+  border-radius: 20px;
+  
+  margin-left: 220px;
+  margin-right: 20px;
+  padding-top: 40px;
+  transition: all 0.3s ease;
+}
+#content.xs {
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+#content .dweb-body {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4), 0 0 6px rgba(0, 0, 0, .4);
+  background-color: rgb(40,44,52,0.6);
+  margin-top: 0;
+  border-radius: 20px;
+}
+#page-view {
+  padding:0 10px;
+  padding-bottom: 20px;
+  margin:10px 10px;
+  height: 80vh;
+  overflow-y: scroll;
+  scrollbar-width: none;  
+}
+#page-view::-webkit-scrollbar {
+  display:none
+}
+
+#top-menu {
+  height: 60px;
+  border-bottom: 1px solid rgb(255,200,21,0.6);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+#top-menu img {
+  width: 40px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4), 0 0 6px rgba(0, 0, 0, .4);
+}
+#menu-list {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255,200,21,0.6);
+}
+.menu-item {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.menu-item.active {
+  background: rgb(255,200,21,0.8);
+  border-right: 5px solid rgb(255,200,21);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4), 0 0 6px rgba(0, 0, 0, .4);
+}
+.menu-item:hover {
+  background: rgb(255,200,21,0.6);
+}
+.menu-item a {
+  text-decoration:none;
+  color:#fff;
+  font-weight: 700;
+}
+.menu-item a:hover{
+  color:rgb(255,200,21);
+}
+.menu-item.green {
+  background: #02ba5a80;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 5px solid #02ba5a;
+}
+.menu-item.green:hover{
+  background: #02ba5a60;
+}
+
+#user-setting {
+  margin-top: 20px;
+}
+#top-content {
+  margin-left: 10px;
+}
+
+.notice {
+  font-weight: 300;
+  color:  #fff
+}
+
+#footer {
+  border-radius: 20px;
+  margin-left: 220px;
+  margin-right: 20px;
+  /* margin-bottom: 10px; */
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  
+}
+#footer a {
+  text-decoration:none;
+}
+#footer.xs {
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+#control-btn {
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  background:  rgba(255,200,21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4), 0 0 6px rgba(0, 0, 0, .4);
+}
+#control-btn i {
+  font-size: 30px;
+}
+
+#control-btn-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  background:  rgba(255,200,21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4), 0 0 6px rgba(0, 0, 0, .4);
+  margin-left: auto;
+}
+#control-btn-top i {
+  font-size: 25px;
+}
+
+/* userinfo-simple */
+#userinfo-simple .card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body .video-cover{
+  cursor: pointer;
+}
+
+/* card相关 */
+.card-header .left {
+  
+}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.span-btn {
+  padding: 1px 5px;
+  background:rgb(40,44,52,0.6);
+  color: #fff;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.btn-blue {
+  background: #14abef;
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-green {
+  background: #02ba5a;
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-yellow {
+  background: rgba(255,200,21,0.8);
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-red {
+  background: rgba(255, 68, 21, 0.8);
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  color: #00000060;
+}
+.btn.big {
+  padding: 5px 10px;
+}
+.green {
+  background: #02ba5a;
+  color: #fff;
+}
+
+/* .card相关 */
+.card .content{
+  margin-top: 10px;
+}
+.card .content .header {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card .content .describe {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255,200,21,0.6);
+}
+.code-iframe {
+  width:100%; 
+  border:0; 
+  border-radius: 4px; 
+  overflow:hidden;
+}
+
+/* 微信登录框 */
+#wxlogin-box {
+  width: 100vw;
+  height: 100vh;
+  background: #00000080;
+  position: fixed;
+  top: 0;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wxlogin-box .card.dweb {
+  width: 960px;
+  min-height: 40vh;
+}
+#wxlogin-box .card.dweb.xs {
+  width: 300px;
+  min-height: 40vh;
+}
+#reload-ewm {
+  width: 150px;
+  height:150px;
+  background: #00000090;
+  position: absolute;
+ 
+  line-height: 150px;
+  cursor: pointer;
+}
+#reload-ewm i {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+
+/* 修改semantci-ui  */
+.ui.inverted.placeholder .line, .ui.inverted.placeholder .line::after {
+  background-color: #1B1C1D00;
+}
+.ui.inverted.placeholder .line {
+  margin-top: 5px;
+}
+
+/* videoinfo组件 */
+.lesson-list {
+  padding: 10px 0;
+  height: 70vh;
+  overflow-y: scroll;
+  scrollbar-width: none;  
+}
+.lesson-list::-webkit-scrollbar {
+  display:none
+}
+.lesson-list .item {
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 5px;
+}
+.lesson-list .section-title {
+  background:  rgba(255,200,21,0.6);
+  border-right: 5px solid rgba(255,200,21);
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.lesson-list .lesson{
+  background:  #00000060;
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer;
+  border-right: 5px solid #000;
+}
+.lesson-list .lesson:hover {
+  background:  #ffffff60;
+  border-right: 5px solid #fff;
+  color: rgba(255,200,21);
+}
+.video-btn {
+  display: flex;
+}
+.video-btn .btn {
+  width: 50%;
+  margin: 5px;
+}
+.videolist.close {
+  margin-right: 200px;
+}
