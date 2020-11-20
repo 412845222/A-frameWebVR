@@ -2,7 +2,7 @@
   <div id="theme-ys">
     <a-scene>
       <a-sky :src="vrbg_src" rotation="0 0 0"></a-sky>
-      <a-entity rotation="12 0 -10" animation="property: rotation;from:12 0 -10; to:12 165 -10 ;easing:easeInOutBack;dur: 60000;dir:alternate;loop: true">
+      <a-entity rotation="12 0 -10" animation="property: rotation;from:12 0 -10; to:12 165 -10 ;easing:easeInOutBack;dur: 120000;dir:alternate;loop: true">
         <a-camera zoom="0.65"></a-camera>
       </a-entity>
 
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div id="content" :class="mobile">
-        <div class="dweb">
+        <div id="body" class="dweb">
           <div @click="showHiddeLeftMenu"
             style="background: #00000060;padding: 10px 20px;width: 40px;text-align: center;;cursor: pointer;font-size: 20px;font-weight: 700;color: rgb(255,200,21);float: right;">
             导航伸缩
@@ -40,14 +40,17 @@
           </div>
         </div>
 
+
+
+        <div id="footer" :class="'dweb '+mobile" style="margin-top: 20px;">
+          <a href="https://space.bilibili.com/22690066" class="btn btn-blue" style="width: 180px;border-radius: 5px;" target="__blank">
+            <i class="iconfont icon-bilibili-fill"></i>
+            点个关注吧
+          </a>
+        </div>
         
       </div>
-      <div id="footer" :class="'dweb '+mobile" style="margin-top: 20px;">
-        <a href="https://space.bilibili.com/22690066" class="btn btn-blue" style="width: 180px;border-radius: 5px;" target="__blank">
-          <i class="iconfont icon-bilibili-fill"></i>
-          点个关注吧
-        </a>
-      </div>
+      
     </div>
 
   </div>
@@ -72,7 +75,8 @@
         { text: '示例', url: '/3' }
       ]
       const vrbg = ref(false)
-      const vrbg_src = ref('https://cdn.dweb.club/image/default/A96A33C950E64DF483F3616C6E37444E-6-2.jpg')
+      const bgimg_list = ['https://cdn.dweb.club/image/default/A96A33C950E64DF483F3616C6E37444E-6-2.jpg','https://cdn.dweb.club/image/default/22609A85458049AD8D5D8B62345C14D6-6-2.jpg','/img/sky.jpg','/img/test2.jpg']
+      const vrbg_src = ref(bgimg_list[0])
 
       //窄屏响应
       if (windowWidth < 960) {
@@ -109,9 +113,9 @@
       function changeBg() {
         vrbg.value = !vrbg.value
         if (vrbg.value==true) {
-          vrbg_src.value = 'https://cdn.dweb.club/image/default/22609A85458049AD8D5D8B62345C14D6-6-2.jpg'
+          vrbg_src.value = bgimg_list[1]
         }else{
-          vrbg_src.value = 'https://cdn.dweb.club/image/default/A96A33C950E64DF483F3616C6E37444E-6-2.jpg'
+          vrbg_src.value = bgimg_list[0]
         }
       }
 
@@ -137,7 +141,7 @@
     z-index: 900;
   }
 
-  #content .dweb {
+  #content #body {
     min-height: 80vh;
   }
 </style>

@@ -1,0 +1,22 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "lefthaed",
+			"GroupId": "",
+			"Name": "左摇头"
+		},
+		{
+			"Id": "rightHead",
+			"GroupId": "",
+			"Name": "右摇头"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Head",
+			"Name": "头"
+		}
+	]
+}

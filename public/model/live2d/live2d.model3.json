@@ -1,0 +1,47 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "live2d.moc3",
+		"Textures": [
+			"live2d.1024/texture_00.png"
+		],
+		"Physics": "live2d.physics3.json",
+		"DisplayInfo": "live2d.cdi3.json",
+		"Motions": {
+			"TapBody": [
+				{
+					"File": "motions/live2d_fastmove01.motion3.json",
+					"FadeInTime": 1,
+					"FadeOutTime": 1
+				}
+			],
+			"Idle": [
+				{
+					"File": "motions/live2d_head01.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": [
+		{
+			"Id": "HitArea2",
+			"Name": "Body"
+		},
+		{
+			"Id": "HitArea",
+			"Name": "Head"
+		}
+	]
+}

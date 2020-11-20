@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title>WebVR动态背景 -- Dweb工作室·九弓子</title>
-  <!-- <script src="/aframe/aframe.js"></script> -->
+  <!-- Pollyfill script -->
+  <script src="/js/minified.js"></script>
+  <script src="/js/live2dcubismcore.min.js"></script>
+  <script src = "/js/bundle.js"></script>
 </head>
 
 <body>
@@ -18,13 +21,12 @@
   <div id="app"></div>
   <!-- built files will be auto injected -->
   <script>
-    // AFRAME.registerComponent('log', {
-    //   schema: { type: 'string' },
-    //   init: function () {
-    //     var stringToLog = this.data;
-    //     console.log(stringToLog);
-    //   }
-    // });
+    
+  // var resourcesPath = '/model/'; // 指定资源文件（模型）保存的路径
+  // var backImageName = ''; // 指定背景图片
+  // var modelDir = ['live2d']; // 指定需要加载的模型
+  // initDefine(resourcesPath, backImageName, modelDir); // 初始化模型
+
   </script>
 </body>
 
