@@ -26,6 +26,12 @@
         </div>
       </div>
       <div id="content" :class="mobile">
+        <div id="footer" :class="'dweb '+mobile" style="margin-bottom: 20px;">
+          <a href="https://space.bilibili.com/22690066" class="btn btn-blue" style="width: 180px;border-radius: 5px;" target="__blank">
+            <i class="iconfont icon-bilibili-fill"></i>
+            点个关注吧
+          </a>
+        </div>
         <div id="body" class="dweb">
           <div @click="showHiddeLeftMenu"
             style="background: #00000060;padding: 10px 20px;width: 40px;text-align: center;;cursor: pointer;font-size: 20px;font-weight: 700;color: rgb(255,200,21);float: right;">
@@ -42,12 +48,7 @@
 
 
 
-        <div id="footer" :class="'dweb '+mobile" style="margin-top: 20px;">
-          <a href="https://space.bilibili.com/22690066" class="btn btn-blue" style="width: 180px;border-radius: 5px;" target="__blank">
-            <i class="iconfont icon-bilibili-fill"></i>
-            点个关注吧
-          </a>
-        </div>
+        
         
       </div>
       
