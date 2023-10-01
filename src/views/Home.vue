@@ -76,8 +76,8 @@
         { text: '示例', url: '/3' }
       ]
       const vrbg = ref(false)
-      const bgimg_list = ['https://cdn.dweb.club/image/default/A96A33C950E64DF483F3616C6E37444E-6-2.jpg','https://cdn.dweb.club/image/default/22609A85458049AD8D5D8B62345C14D6-6-2.jpg','/img/sky.jpg','/img/test2.jpg']
-      const vrbg_src = ref(bgimg_list[0])
+      const bgimg_list = ['https://cdn.dweb.club/image/default/A96A33C950E64DF483F3616C6E37444E-6-2.jpg','https://cdn.dweb.club/image/default/22609A85458049AD8D5D8B62345C14D6-6-2.jpg','/img/sky.jpg','/img/test2.jpg'] // /img/sky.jpg
+      const vrbg_src = ref(bgimg_list[2])
 
       //窄屏响应
       if (windowWidth < 960) {
@@ -114,9 +114,9 @@
       function changeBg() {
         vrbg.value = !vrbg.value
         if (vrbg.value==true) {
-          vrbg_src.value = bgimg_list[1]
+          vrbg_src.value = bgimg_list[2]
         }else{
-          vrbg_src.value = bgimg_list[0]
+          vrbg_src.value = bgimg_list[3]
         }
       }
 
